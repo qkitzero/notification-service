@@ -4,7 +4,7 @@ on:
   pull_request:
     types: [opened, synchronize, reopened]
     branches-ignore:
-      - "main"
+      - 'main'
 
 permissions:
   pull-requests: write
@@ -20,5 +20,5 @@ jobs:
       - name: Run ant-pr
         uses: qkitzero/ant-pr@v1.4.0
         with:
-          config-path: ".ant-pr.yml"
+          config-path: '.ant-pr.yml'
           github-token: ${{ secrets.GITHUB_TOKEN }}

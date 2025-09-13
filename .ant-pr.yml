@@ -1,0 +1,6 @@
+limits:
+  files: 15
+  lines:
+    '': 100
+    'src/': 200
+    'test/': 100

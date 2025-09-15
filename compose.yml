@@ -6,6 +6,7 @@ services:
     container_name: notification-server
     restart: always
     environment:
+      - HOST=${SERVER_HOST}
       - PORT=${SERVER_CONTAINER_PORT}
     depends_on:
       notification-db:

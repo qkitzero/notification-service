@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package notification.v1;
+
+service NotificationService {
+  rpc CreateNotification(CreateNotificationRequest) returns (CreateNotificationResponse) {}
+}
+
+message CreateNotificationRequest {}
+
+message CreateNotificationResponse {}
